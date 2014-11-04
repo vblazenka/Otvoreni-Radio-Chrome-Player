@@ -12,7 +12,7 @@ function playStream() {
 
   soundManager.createSound({
     id: 'otvoreni',
-    url: 'http://209.105.250.73:8502/stream.aac'
+    url: 'http://87.98.250.149:8002'
   });
 
   if( isClicked ) 
