@@ -4,7 +4,6 @@ chrome.runtime.onInstalled.addListener(function (details) {
   console.log('previousVersion', details.previousVersion);
 });
 
-
 var isClicked = false;
 
 function playStream() {
@@ -25,6 +24,5 @@ function playStream() {
   }
 
 }
-
 
 chrome.browserAction.onClicked.addListener(playStream);
