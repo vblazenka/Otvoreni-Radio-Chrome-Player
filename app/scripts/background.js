@@ -1,17 +1,13 @@
-'use strict';
-
-chrome.runtime.onInstalled.addListener(function (details) {
-  console.log('previousVersion', details.previousVersion);
-});
 
 let isClicked = false;
+
 
 function playStream() {
   isClicked = !isClicked;
 
   soundManager.createSound({
     id: 'otvoreni',
-    url: 'http://87.98.250.149:8002'
+    url: 'http://192.240.102.133:12055/stream.aac'
   });
 
   if (isClicked) {
